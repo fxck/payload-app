@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  envName: 'production',
+  apiEndpoint: 'https://api.payloadapp.fxck.dev'
 };
