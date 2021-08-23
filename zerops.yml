@@ -1,0 +1,5 @@
+use: [node@14]
+run:
+  - npm install
+  - npm run build
+deploy: ['dist/payload-app/*']
