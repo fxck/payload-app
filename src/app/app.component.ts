@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  posts$ = this._http.get(`${environment.apiEndpoint}/posts`);
+  posts$ = this._http.get<any[]>(`${environment.apiEndpoint}/posts`);
 
   constructor(private _http: HttpClient) { }
 }
